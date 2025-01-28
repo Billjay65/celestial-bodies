@@ -280,56 +280,56 @@ ALTER TABLE ONLY public.star ALTER COLUMN star_id SET DEFAULT nextval('public.st
 -- Data for Name: galaxy; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.galaxy VALUES (1, 'Milky Way', 'Our home galaxy, containing our Solar System.', NULL, NULL, NULL, NULL);
-INSERT INTO public.galaxy VALUES (2, 'Andromeda', 'Nearest major galaxy to the Milky Way.', NULL, NULL, NULL, NULL);
-INSERT INTO public.galaxy VALUES (3, 'Triangulum', 'A member of the Local Group of galaxies.', NULL, NULL, NULL, NULL);
-INSERT INTO public.galaxy VALUES (4, 'Sombrero Galaxy', 'Galaxy with a bright nucleus and a large central bulge.', NULL, NULL, NULL, NULL);
-INSERT INTO public.galaxy VALUES (5, 'Whirlpool Galaxy', 'A classic spiral galaxy with well-defined arms.', NULL, NULL, NULL, NULL);
-INSERT INTO public.galaxy VALUES (6, 'Messier 87', 'A giant elliptical galaxy in the Virgo Cluster.', NULL, NULL, NULL, NULL);
+INSERT INTO public.galaxy VALUES (1, 'Milky Way', 'Our home galaxy containing the Solar System.', 0, 200000000, 'Ancient Observers', NULL);
+INSERT INTO public.galaxy VALUES (2, 'Andromeda', 'Nearest large galaxy to the Milky Way.', 2537000, 1000000000, 'Abd al-Rahman al-Sufi', 964);
+INSERT INTO public.galaxy VALUES (3, 'Triangulum', 'A member of the local group.', 3000000, 40000000, 'Charles Messier', 1764);
+INSERT INTO public.galaxy VALUES (4, 'Whirlpool Galaxy', 'Famous for its spiral structure.', 23000000, 100000000, 'Charles Messier', 1773);
+INSERT INTO public.galaxy VALUES (5, 'Sombrero Galaxy', 'Known for its bright nucleus and large central bulge.', 29000000, 80000000, 'Pierre Méchain', 1781);
+INSERT INTO public.galaxy VALUES (6, 'Large Magellanic Cloud', 'A satellite galaxy of the Milky Way.', 163000, 30000000, 'Ferdinand Magellan', 1519);
 
 
 --
 -- Data for Name: moon; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.moon VALUES (1, 'Moon', 384400.00, 'The only natural satellite of Earth.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (2, 'Phobos', 9376.00, 'A moon of Mars.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (3, 'Deimos', 23463.00, 'A moon of Mars.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (4, 'Europa', 628300.00, 'A moon of Jupiter with an icy surface.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (5, 'Ganymede', 1070400.00, 'The largest moon in the Solar System.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (6, 'Io', 628300.00, 'A volcanically active moon of Jupiter.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (7, 'Callisto', 1882700.00, 'A heavily cratered moon of Jupiter.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (8, 'Titan', 1221850.00, 'A large moon of Saturn with a dense atmosphere.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (9, 'Rhea', 527040.00, 'A moon of Saturn.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (10, 'Iapetus', 3561300.00, 'A moon of Saturn.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (11, 'Dione', 377400.00, 'A moon of Saturn.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (12, 'Triton', 3547600.00, 'A moon of Neptune with retrograde orbit.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (13, 'Charon', 19571.00, 'The largest moon of Pluto.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (14, 'Mimas', 185520.00, 'A moon of Saturn with a large crater.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (15, 'Enceladus', 237950.00, 'A moon of Saturn with geysers.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (16, 'Oberon', 582600.00, 'A moon of Uranus.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (17, 'Miranda', 129900.00, 'A moon of Uranus.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (18, 'Ariel', 190900.00, 'A moon of Uranus.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (19, 'Umbriel', 266000.00, 'A moon of Uranus.', NULL, NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (20, 'Hyperion', 1500000.00, 'An irregularly shaped moon of Saturn.', NULL, NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (1, 'Moon', 384400.00, 'Earths only natural satellite.', 1, 3474.8, 27.3, true);
+INSERT INTO public.moon VALUES (2, 'Phobos', 9376.00, 'One of Mars two small moons.', 2, 22.4, 0.3, true);
+INSERT INTO public.moon VALUES (3, 'Deimos', 23460.00, 'The smaller moon of Mars.', 2, 12.4, 1.26, true);
+INSERT INTO public.moon VALUES (4, 'Europa', 628300000.00, 'An icy moon of Jupiter.', 3, 3121.6, 3.55, true);
+INSERT INTO public.moon VALUES (5, 'Ganymede', 628300000.00, 'The largest moon in the Solar System.', 3, 5268, 7.16, true);
+INSERT INTO public.moon VALUES (6, 'Titan', 1429400000.00, 'The largest moon of Saturn.', 4, 5150, 15.9, true);
+INSERT INTO public.moon VALUES (7, 'Enceladus', 1429400000.00, 'A moon with active geysers.', 4, 504, 1.37, true);
+INSERT INTO public.moon VALUES (8, 'Triton', 4540000000.00, 'Neptunes largest moon.', 5, 2706.8, 5.87, true);
+INSERT INTO public.moon VALUES (9, 'Charon', 5906376272.00, 'Plutos largest moon.', 6, 1212, 6.39, true);
+INSERT INTO public.moon VALUES (10, 'Io', 628300000.00, 'The most volcanically active moon.', 3, 3642, 1.77, true);
+INSERT INTO public.moon VALUES (11, 'Callisto', 628300000.00, 'A heavily cratered moon.', 3, 4821, 16.7, true);
+INSERT INTO public.moon VALUES (12, 'Hyperion', 1429400000.00, 'A small irregular moon of Saturn.', 4, 270, 21.3, false);
+INSERT INTO public.moon VALUES (13, 'Mimas', 1429400000.00, 'Known as the "Death Star" moon.', 4, 396, 0.94, true);
+INSERT INTO public.moon VALUES (14, 'Oberon', 2877000000.00, 'The outermost moon of Uranus.', 3, 1523, 13.46, true);
+INSERT INTO public.moon VALUES (15, 'Miranda', 2877000000.00, 'A moon with an unusual surface.', 3, 471, 1.41, true);
+INSERT INTO public.moon VALUES (16, 'Ariel', 2877000000.00, 'A moon with valleys and cliffs.', 3, 1158, 2.52, true);
+INSERT INTO public.moon VALUES (17, 'Umbriel', 2877000000.00, 'A dark moon of Uranus.', 3, 1169, 4.14, true);
+INSERT INTO public.moon VALUES (18, 'Dione', 1429400000.00, 'A moon with an ice crust.', 4, 1123, 2.74, true);
+INSERT INTO public.moon VALUES (19, 'Rhea', 1429400000.00, 'A moon with a thin atmosphere.', 4, 1528, 4.52, true);
+INSERT INTO public.moon VALUES (20, 'Iapetus', 1429400000.00, 'A moon with two-tone coloration.', 4, 1469, 79.3, false);
 
 
 --
 -- Data for Name: planet; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.planet VALUES (1, 'Earth', 4500, 8000000, 'The only known planet with life.', true, true, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.planet VALUES (2, 'Mars', 4500, 0, 'The Red Planet.', true, false, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.planet VALUES (3, 'Jupiter', 4500, 0, 'The largest planet in the Solar System.', true, false, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.planet VALUES (4, 'Saturn', 4500, 0, 'Known for its prominent ring system.', true, false, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.planet VALUES (5, 'Proxima b', 4500, 0, 'An exoplanet orbiting Proxima Centauri.', true, false, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.planet VALUES (6, 'Kepler-22b', 5000, 0, 'A potential Earth-like exoplanet.', true, false, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.planet VALUES (7, 'Neptune', 4500, 0, 'The farthest planet from the Sun.', true, false, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.planet VALUES (8, 'Venus', 4500, 0, 'A planet with a thick, toxic atmosphere.', true, false, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.planet VALUES (9, 'Mercury', 4500, 0, 'The closest planet to the Sun.', true, false, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.planet VALUES (10, 'Gliese 581g', 10000, 0, 'A potentially habitable exoplanet.', true, false, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.planet VALUES (11, 'Kepler-452b', 6000, 0, 'A super-Earth orbiting a Sun-like star.', true, false, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO public.planet VALUES (12, 'Titan', 4500, 0, 'A moon-like body larger than Mercury.', false, false, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO public.planet VALUES (1, 'Earth', 4540, 7000000, 'The only planet known to support life.', true, true, 1, 12742, 365.25, 15, 1);
+INSERT INTO public.planet VALUES (2, 'Mars', 4500, 0, 'Known as the Red Planet.', true, false, 1, 6779, 687, -63, 1);
+INSERT INTO public.planet VALUES (3, 'Jupiter', 4500, 0, 'The largest planet in the Solar System.', true, false, 1, 139820, 4331, -108, 2);
+INSERT INTO public.planet VALUES (4, 'Saturn', 4500, 0, 'Famous for its ring system.', true, false, 1, 116460, 10747, -139, 2);
+INSERT INTO public.planet VALUES (5, 'Neptune', 4500, 0, 'The furthest planet from the Sun.', true, false, 1, 49244, 60190, -201, 3);
+INSERT INTO public.planet VALUES (6, 'Pluto', 4500, 0, 'A dwarf planet in the Kuiper Belt.', true, false, 1, 2376, 90560, -229, 4);
+INSERT INTO public.planet VALUES (7, 'Kepler-22b', NULL, 0, 'An exoplanet in the habitable zone of Kepler-22.', true, NULL, 6, 24500, 290, NULL, 5);
+INSERT INTO public.planet VALUES (8, 'Alpha Centauri Bb', NULL, 0, 'An exoplanet orbiting Alpha Centauri B.', true, NULL, 3, 13000, 20, NULL, 5);
+INSERT INTO public.planet VALUES (9, 'Gliese 581g', NULL, 0, 'A possible Earth-like exoplanet.', true, NULL, 3, 14500, 37, NULL, 5);
+INSERT INTO public.planet VALUES (10, 'HD 209458 b', NULL, 0, 'A gas giant exoplanet in Pegasus.', true, false, 4, 133000, 3.52, NULL, 2);
+INSERT INTO public.planet VALUES (11, 'TRAPPIST-1e', NULL, 0, 'Potentially habitable planet.', true, NULL, 5, 12700, 6.1, NULL, 5);
+INSERT INTO public.planet VALUES (12, 'GJ 1214b', NULL, 0, 'A mini-Neptune exoplanet.', true, NULL, 5, 15000, 1.6, NULL, 3);
 
 
 --
@@ -347,12 +347,12 @@ INSERT INTO public.planet_type VALUES (5, 'Exoplanet', 'Planets that orbit stars
 -- Data for Name: star; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.star VALUES (1, 'Sun', 1, 'The star at the center of our Solar System.', NULL, NULL, NULL, NULL);
-INSERT INTO public.star VALUES (2, 'Alpha Centauri', 1, 'A triple star system in the Milky Way.', NULL, NULL, NULL, NULL);
-INSERT INTO public.star VALUES (3, 'Betelgeuse', 1, 'A red supergiant star in the Orion constellation.', NULL, NULL, NULL, NULL);
-INSERT INTO public.star VALUES (4, 'Sirius', 1, 'The brightest star in the night sky.', NULL, NULL, NULL, NULL);
-INSERT INTO public.star VALUES (5, 'Vega', 1, 'The fifth-brightest star in the night sky.', NULL, NULL, NULL, NULL);
-INSERT INTO public.star VALUES (6, 'Polaris', 2, 'Known as the North Star, located in the Andromeda galaxy.', NULL, NULL, NULL, NULL);
+INSERT INTO public.star VALUES (1, 'Sun', 1, 'The star at the center of our Solar System.', 'G-type Main Sequence', 1, 1, 4600);
+INSERT INTO public.star VALUES (2, 'Betelgeuse', 1, 'A red supergiant star in the Orion constellation.', 'Red Supergiant', 20, 120000, 10000);
+INSERT INTO public.star VALUES (3, 'Proxima Centauri', 1, 'The closest star to the Solar System.', 'Red Dwarf', 0.12, 0.0017, 4700);
+INSERT INTO public.star VALUES (4, 'Rigel', 1, 'A blue supergiant in the Orion constellation.', 'Blue Supergiant', 21, 120000, 8000);
+INSERT INTO public.star VALUES (5, 'Vega', 1, 'A bright star in the Lyra constellation.', 'A-type Main Sequence', 2.1, 40.12, 455);
+INSERT INTO public.star VALUES (6, 'Sirius', 1, 'The brightest star in the night sky.', 'Binary System', 2.02, 25.4, 242);
 
 
 --
@@ -468,6 +468,14 @@ ALTER TABLE ONLY public.star
 
 ALTER TABLE ONLY public.star
     ADD CONSTRAINT star_pkey PRIMARY KEY (star_id);
+
+
+--
+-- Name: moon fk_planet_id; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.moon
+    ADD CONSTRAINT fk_planet_id FOREIGN KEY (planet_id) REFERENCES public.planet(planet_id);
 
 
 --
